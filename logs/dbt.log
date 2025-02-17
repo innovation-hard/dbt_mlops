@@ -1,0 +1,89 @@
+[0m22:16:49.955070 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa158a8e1e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa159cfdfd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa159a4a840>]}
+
+
+============================== 22:16:49.957637 | 5a612293-821e-4537-b343-81d1b3098a5c ==============================
+[0m22:16:49.957637 [info ] [MainThread]: Running with dbt=1.9.1
+[0m22:16:49.958103 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/jorge/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt init db_postgres', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:16:49.969048 [debug] [MainThread]: Starter project path: /home/jorge/anaconda3/envs/mlops-dbt/lib/python3.12/site-packages/dbt/include/starter_project
+[0m22:16:49.971656 [info ] [MainThread]: 
+Your new dbt project "db_postgres" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:16:49.971969 [info ] [MainThread]: Setting up your profile.
+[0m22:17:57.529408 [info ] [MainThread]: Profile db_postgres written to /home/jorge/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m22:17:57.533250 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 67.64536, "process_in_blocks": "1096", "process_kernel_time": 0.080252, "process_mem_max_rss": "95052", "process_out_blocks": "80", "process_user_time": 1.027233}
+[0m22:17:57.535428 [debug] [MainThread]: Command `dbt init` succeeded at 22:17:57.534972 after 67.65 seconds
+[0m22:17:57.536907 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa15b7bb410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1581e8a40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1596e5610>]}
+[0m22:17:57.538551 [debug] [MainThread]: Flushing usage events
+[0m22:17:58.182786 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:23:24.217058 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f06b9c72900>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f06b97f7f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f06b9f82570>]}
+
+
+============================== 23:23:24.219502 | 215ecbf6-79af-4d43-add5-0243825f4e3c ==============================
+[0m23:23:24.219502 [info ] [MainThread]: Running with dbt=1.9.1
+[0m23:23:24.219927 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/home/jorge/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m23:23:24.225802 [info ] [MainThread]: dbt version: 1.9.1
+[0m23:23:24.226094 [info ] [MainThread]: python version: 3.12.7
+[0m23:23:24.226360 [info ] [MainThread]: python path: /home/jorge/anaconda3/envs/mlops-dbt/bin/python3.12
+[0m23:23:24.226717 [info ] [MainThread]: os info: Linux-6.1.0-30-amd64-x86_64-with-glibc2.36
+[0m23:23:24.285770 [info ] [MainThread]: Using profiles dir at /home/jorge/.dbt
+[0m23:23:24.286100 [info ] [MainThread]: Using profiles.yml file at /home/jorge/.dbt/profiles.yml
+[0m23:23:24.286359 [info ] [MainThread]: Using dbt_project.yml file at /home/repo/ML/dbt/dbt_project.yml
+[0m23:23:24.286830 [info ] [MainThread]: adapter type: postgres
+[0m23:23:24.287096 [info ] [MainThread]: adapter version: 1.9.0
+[0m23:23:24.287366 [info ] [MainThread]: Configuration:
+[0m23:23:24.287619 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m23:23:24.287868 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m23:23:24.288118 [info ] [MainThread]: Required dependencies:
+[0m23:23:24.288383 [debug] [MainThread]: Executing "git --help"
+[0m23:23:24.290451 [debug] [MainThread]: STDOUT: "b"uso: git [-v | --version] [-h | --help] [-C <ruta>] [-c <nombre>=<valor>]\n           [--exec-path[=<ruta>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<ruta>] [--work-tree=<ruta>] [--namespace=<nombre>]\n           [--super-prefix=<ruta>] [--config-env=<nombre>=<variable-de-entorno>]\n           <comando> [<argumentos>]\n\nEstos son comandos comunes de Git usados en varias situaciones:\n\ncomenzar un \xc3\xa1rea de trabajo (mira tambi\xc3\xa9n: git help tutorial)\n   clone     Clonar un repositorio dentro de un nuevo directorio\n   init      Crear un repositorio de Git vac\xc3\xado o reinicia el que ya existe\n\ntrabajar en los cambios actuales (mira tambi\xc3\xa9n: git help everyday)\n   add       Agregar contenido de archivos al \xc3\xadndice\n   mv        Mover o cambiar el nombre a archivos, directorios o enlaces simb\xc3\xb3licos\n   restore   Restaurar archivos del \xc3\xa1rbol de trabajo\n   rm        Borrar archivos del \xc3\xa1rbol de trabajo y del \xc3\xadndice\n\nexaminar el historial y el estado (mira tambi\xc3\xa9n: git help revisions)\n   bisect    Usar la b\xc3\xbasqueda binaria para encontrar el commit que introdujo el bug\n   diff      Mostrar los cambios entre commits, commit y \xc3\xa1rbol de trabajo, etc\n   grep      Imprimir las l\xc3\xadneas que concuerden con el patr\xc3\xb3n\n   log       Mostrar los logs de los commits\n   show      Mostrar varios tipos de objetos\n   status    Mostrar el estado del \xc3\xa1rbol de trabajo\n\ncrecer, marcar y ajustar tu historial com\xc3\xban\n   branch    Listar, crear, o borrar ramas\n   commit    Grabar los cambios al repositorio\n   merge     Juntar dos o m\xc3\xa1s historiales de desarrollo juntos\n   rebase    Volver a aplicar commits en la punta de otra rama\n   reset     Reiniciar el HEAD actual a un estado espec\xc3\xadfico\n   switch    Cambiar de branch\n   tag       Crear, listar, borrar o verificar un objeto de tag firmado con GPG\n\ncolaborar (mira tambi\xc3\xa9n: git help workflows)\n   fetch     Descargar objetos y referencias de otro repositorio\n   pull      Realizar un fetch e integra con otro repositorio o rama local\n   push      Actualizar referencias remotas junto con sus objetos asociados\n\n'git help -a' y 'git help -g' listan los subcomandos disponibles y algunas\ngu\xc3\xadas de concepto. Consulta 'git help <command>' o 'git help <concepto>'\npara leer sobre un subcomando o concepto espec\xc3\xadfico.\nMira 'git help git' para una vista general del sistema.\n""
+[0m23:23:24.290769 [debug] [MainThread]: STDERR: "b''"
+[0m23:23:24.291020 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:23:24.291278 [info ] [MainThread]: Connection:
+[0m23:23:24.291540 [info ] [MainThread]:   host: localhost
+[0m23:23:24.291792 [info ] [MainThread]:   port: 5432
+[0m23:23:24.292040 [info ] [MainThread]:   user: airbyte
+[0m23:23:24.292287 [info ] [MainThread]:   database: mlops
+[0m23:23:24.292534 [info ] [MainThread]:   schema: target
+[0m23:23:24.292824 [info ] [MainThread]:   connect_timeout: 10
+[0m23:23:24.293075 [info ] [MainThread]:   role: None
+[0m23:23:24.293323 [info ] [MainThread]:   search_path: None
+[0m23:23:24.293607 [info ] [MainThread]:   keepalives_idle: 0
+[0m23:23:24.293857 [info ] [MainThread]:   sslmode: None
+[0m23:23:24.294105 [info ] [MainThread]:   sslcert: None
+[0m23:23:24.294382 [info ] [MainThread]:   sslkey: None
+[0m23:23:24.294630 [info ] [MainThread]:   sslrootcert: None
+[0m23:23:24.294876 [info ] [MainThread]:   application_name: dbt
+[0m23:23:24.295223 [info ] [MainThread]:   retries: 1
+[0m23:23:24.295667 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m23:23:24.341660 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m23:23:24.365070 [debug] [MainThread]: Using postgres connection "debug"
+[0m23:23:24.365390 [debug] [MainThread]: On debug: select 1 as id
+[0m23:23:24.365644 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:23:24.376001 [debug] [MainThread]: SQL status: SELECT 1 in 0.010 seconds
+[0m23:23:24.376787 [debug] [MainThread]: On debug: Close
+[0m23:23:24.377067 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m23:23:24.377382 [info ] [MainThread]: [31m1 check failed:[0m
+[0m23:23:24.377642 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/repo/ML/dbt/dbt_project.yml> not found
+
+[0m23:23:24.378338 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.22677101, "process_in_blocks": "22024", "process_kernel_time": 0.135359, "process_mem_max_rss": "102244", "process_out_blocks": "24", "process_user_time": 1.031118}
+[0m23:23:24.378764 [debug] [MainThread]: Command `dbt debug` failed at 23:23:24.378675 after 0.23 seconds
+[0m23:23:24.379055 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m23:23:24.379343 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f06b9a7ede0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f06b99c5eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f06b99c4c20>]}
+[0m23:23:24.379665 [debug] [MainThread]: Flushing usage events
+[0m23:23:25.091143 [debug] [MainThread]: An error was encountered while trying to flush usage events

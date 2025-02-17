@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: db_postgres
+    tables:
+      - name: movies
+        meta:
+          dagster:
+            asset_key: ["movies"]
